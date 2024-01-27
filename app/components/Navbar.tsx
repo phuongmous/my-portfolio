@@ -14,7 +14,7 @@ export default function Navbar() {
                             <div className=" flex justify-between w-full">
                                 <div className="flex items-center">
                                     <Link href="/">
-                                        <h1 className="text-2xl font-medium">
+                                        <h1 className="text-2xl font-medium text-blue-300 dark:text-pink-300">
                                             P/V
                                         </h1>
                                     </Link>
@@ -114,7 +114,7 @@ export default function Navbar() {
                                 prefetch 
                                 className={`${
                                     pathname == "/" ? 'bg-blue-50 border-blue-300 text-blue-300 block pl-3 pr-4 py-2 border-l-4 text-base font-medium dark:text-pink-300 dark:bg-gray-800 dark:border-pink-300' 
-                                    : 'border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700 block pl-3 pr-4 py-2 dark:hover:bg-gray-700' 
+                                    : 'border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-white block pl-3 pr-4 py-2 dark:hover:bg-gray-700 border-l-4 text-base font-medium dark:text-white' 
                                     }`}
                             >
                                 Intro
@@ -123,8 +123,8 @@ export default function Navbar() {
                                 href="/about" 
                                 prefetch 
                                 className={`${
-                                    pathname == "/" ? 'bg-blue-50 border-blue-300 text-blue-300 block pl-3 pr-4 py-2 border-l-4 text-base font-medium dark:text-pink-300 dark:bg-gray-800 dark:border-pink-300' 
-                                    : 'border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700 block pl-3 pr-4 py-2 dark:hover:bg-gray-700' 
+                                    pathname == "/about" ? 'bg-blue-50 border-blue-300 text-blue-300 block pl-3 pr-4 py-2 border-l-4 text-base font-medium dark:text-pink-300 dark:bg-gray-800 dark:border-pink-300' 
+                                    : 'border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-white block pl-3 pr-4 py-2 dark:hover:bg-gray-700 border-l-4 text-base font-medium dark:text-white'  
                                     }`}
                             >
                                 About
@@ -133,8 +133,8 @@ export default function Navbar() {
                                 href="/projects" 
                                 prefetch 
                                 className={`${
-                                    pathname == "/" ? 'bg-blue-50 border-blue-300 text-blue-300 block pl-3 pr-4 py-2 border-l-4 text-base font-medium dark:text-pink-300 dark:bg-gray-800 dark:border-pink-300' 
-                                    : 'border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700 block pl-3 pr-4 py-2 dark:hover:bg-gray-700' 
+                                    pathname == "/projects" ? 'bg-blue-50 border-blue-300 text-blue-300 block pl-3 pr-4 py-2 border-l-4 text-base font-medium dark:text-pink-300 dark:bg-gray-800 dark:border-pink-300' 
+                                    : 'border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-white block pl-3 pr-4 py-2 dark:hover:bg-gray-700 border-l-4 text-base font-medium dark:text-white'  
                                     }`}
                             >
                                 Projects
@@ -143,8 +143,8 @@ export default function Navbar() {
                                 href="/skills" 
                                 prefetch 
                                 className={`${
-                                    pathname == "/" ? 'bg-blue-50 border-blue-300 text-blue-300 block pl-3 pr-4 py-2 border-l-4 text-base font-medium dark:text-pink-300 dark:bg-gray-800 dark:border-pink-300' 
-                                    : 'border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700 block pl-3 pr-4 py-2 dark:hover:bg-gray-700' 
+                                    pathname == "/skills" ? 'bg-blue-50 border-blue-300 text-blue-300 block pl-3 pr-4 py-2 border-l-4 text-base font-medium dark:text-pink-300 dark:bg-gray-800 dark:border-pink-300' 
+                                    : 'border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-white block pl-3 pr-4 py-2 dark:hover:bg-gray-700 border-l-4 text-base font-medium dark:text-white'  
                                     }`}
                             >
                                 Skills
@@ -153,8 +153,8 @@ export default function Navbar() {
                                 href="/contact" 
                                 prefetch 
                                 className={`${
-                                    pathname == "/" ? 'bg-blue-50 border-blue-300 text-blue-300 block pl-3 pr-4 py-2 border-l-4 text-base font-medium dark:text-pink-300 dark:bg-gray-800 dark:border-pink-300' 
-                                    : 'border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-700 block pl-3 pr-4 py-2 dark:hover:bg-gray-700' 
+                                    pathname == "/contact" ? 'bg-blue-50 border-blue-300 text-blue-300 block pl-3 pr-4 py-2 border-l-4 text-base font-medium dark:text-pink-300 dark:bg-gray-800 dark:border-pink-300' 
+                                    : 'border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-white block pl-3 pr-4 py-2 dark:hover:bg-gray-700 border-l-4 text-base font-medium dark:text-white'  
                                     }`}
                             >
                                 Contact
