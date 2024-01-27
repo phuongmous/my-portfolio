@@ -2,6 +2,7 @@
 import { Disclosure } from "@headlessui/react";
 import Link from "next/link";
 import {usePathname} from "next/navigation";
+import Thememodebutton from "./Thememodebutton";
 
 export default function Navbar() {
     let pathname = usePathname() || '/'
@@ -24,7 +25,7 @@ export default function Navbar() {
                                         href="/" 
                                         prefetch 
                                         className={`${
-                                            pathname === "/" ? ' dark:text-white dark:hover:border-b-1 dark:hover:border-pink-300 h-full inline-flex items-center px-1  pt-1 hover:border-b-2 hover:border-blue-300 text-sm font-medium' 
+                                            pathname === "/" ? ' dark:text-white dark:border-pink-300 dark:border-b-2 h-full inline-flex items-center px-1  pt-1 border-blue-300 border-b-2 text-sm font-medium' 
                                         : 'border-transparent text-gray-500 dark:text-gray-300 dark:hover:text-white inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium' 
                                         }`}
                                     >
@@ -34,7 +35,7 @@ export default function Navbar() {
                                         href="/about" 
                                         prefetch 
                                         className={`${
-                                            pathname === "/" ? ' dark:text-white dark:hover:border-b-1 dark:hover:border-pink-300 h-full inline-flex items-center px-1  pt-1 hover:border-b-2 hover:border-blue-300 text-sm font-medium' 
+                                            pathname === "/about" ? ' dark:text-white dark:border-pink-300 dark:border-b-2 h-full inline-flex items-center px-1  pt-1 border-blue-300 border-b-2 text-sm font-medium' 
                                         : 'border-transparent text-gray-500 dark:text-gray-300 dark:hover:text-white inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium' 
                                         }`}
                                     >
@@ -44,7 +45,7 @@ export default function Navbar() {
                                         href="/projects" 
                                         prefetch 
                                         className={`${
-                                            pathname === "/" ? ' dark:text-white dark:hover:border-b-1 dark:hover:border-pink-300 h-full inline-flex items-center px-1  pt-1 hover:border-b-2 hover:border-blue-300 text-sm font-medium' 
+                                            pathname === "/projects" ? ' dark:text-white dark:border-pink-300 dark:border-b-2 h-full inline-flex items-center px-1  pt-1 border-blue-300 border-b-2 text-sm font-medium' 
                                         : 'border-transparent text-gray-500 dark:text-gray-300 dark:hover:text-white inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium' 
                                         }`}
                                     >
@@ -54,7 +55,7 @@ export default function Navbar() {
                                         href="/skills" 
                                         prefetch 
                                         className={`${
-                                            pathname === "/" ? ' dark:text-white dark:hover:border-b-1 dark:hover:border-pink-300 h-full inline-flex items-center px-1  pt-1 hover:border-b-2 hover:border-blue-300 text-sm font-medium' 
+                                            pathname === "/skills" ? ' dark:text-white dark:border-pink-300 dark:border-b-2 h-full inline-flex items-center px-1  pt-1 border-blue-300 border-b-2 text-sm font-medium' 
                                         : 'border-transparent text-gray-500 dark:text-gray-300 dark:hover:text-white inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium' 
                                         }`}
                                     >
@@ -63,15 +64,17 @@ export default function Navbar() {
                                     <Link 
                                         href="/contact" 
                                         prefetch 
-                                        className={`${pathname === "/" ? ' dark:text-white dark:hover:border-b-1 dark:hover:border-pink-300 h-full inline-flex items-center px-1  pt-1 hover:border-b-2 hover:border-blue-300 text-sm font-medium' 
+                                        className={`${pathname === "/contact" ? ' dark:text-white dark:border-pink-300 dark:border-b-2 h-full inline-flex items-center px-1  pt-1 border-blue-300 border-b-2 text-sm font-medium' 
                                         : 'border-transparent text-gray-500 dark:text-gray-300 dark:hover:text-white inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium' 
                                         }`}
                                     >
                                         Contact
                                     </Link>
+                                    <Thememodebutton />
                                 </div>
                             </div>
                             <div className="-mr-2 flex items-center sm:hidden">
+                                <Thememodebutton />
                                 <Disclosure.Button className="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-blue-300 dark:focus:ring-pink-300 dark:hover:bg-gray-800">
                                     {open ? (
                                         <svg 
